@@ -121,6 +121,8 @@ for(let y = 0; y < this.props.nrows; y++){
     //tblBoard.push(<tr>{row}</tr>);
     console.log(row);
 }
+
+    tblBoard.push(<tr>{row}</tr>);
 }
 
 
