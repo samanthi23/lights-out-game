@@ -107,6 +107,7 @@ let hasWon = false;
     // TODO
 
     // make table board
+    /*
 let tblBoard = [];
 
 for(let y = 0; y < this.props.nrows; y++){
@@ -119,18 +120,19 @@ for(let y = 0; y < this.props.nrows; y++){
     );
     tblBoard.push(<tr>{row}</tr>);
 }
-}
+}*/
 
 
 
     // TODO
-    return (
+    return (/*
       <table className='Board'>
         <tbody>
         {tblBoard}
         </tbody>
       </table>
-      
+      */
+      <h1>Board </h1>
       )
   }
 }
