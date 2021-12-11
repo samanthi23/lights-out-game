@@ -107,32 +107,31 @@ let hasWon = false;
     // TODO
 
     // make table board
-    /*
+    
 let tblBoard = [];
 
 for(let y = 0; y < this.props.nrows; y++){
   let row = [];
   for(let x = 0; x < this.props.ncols; x++) {
-    let coord = `${y}-${x}`;
-    row.push(<Cell key={coord} isLit={this.state.board[y][x] } 
-    flipCellsAroundMe={() => this.flipCellsAround(coord)}
-    />
-    );
-    tblBoard.push(<tr>{row}</tr>);
+   // let coord = `${y}-${x}`;
+    row.push(<Cell isLit={this.state.board[y][x] } />);
+   // flipCellsAroundMe={() => this.flipCellsAround(coord)}
+   // />
+    //);
+    //tblBoard.push(<tr>{row}</tr>);
+    console.log(row);
 }
-}*/
+}
 
 
 
     // TODO
-    return (/*
+    return (
       <table className='Board'>
         <tbody>
         {tblBoard}
         </tbody>
       </table>
-      */
-      <h1>Board </h1>
       )
   }
 }
