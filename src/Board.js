@@ -105,7 +105,14 @@ let hasWon = board.every(row => row.every(cell => !cell));
 
   render() {
     if(this.state.hasWon) {
-      return <h1>You Won!!</h1>
+      return   (
+      <div className="board-title">
+        <div className="winner">
+          <span className="neon-orange">YOU</span>
+          <span className="neon-blue">WIN!</span>
+        </div>
+        </div>
+    )
     }
 
     // if the game is won, just show a winning msg & render nothing else
@@ -135,11 +142,17 @@ for(let y = 0; y < this.props.nrows; y++){
 
     // TODO
     return (
+      <div>
+        <div className="board-title">
+      <div className="neon-orange">Lights</div>
+      <div className="neon-blue">Out</div>
+        </div>
       <table className='Board'>
         <tbody>
         {tblBoard}
         </tbody>
       </table>
+      </div>
       )
   }
 }
